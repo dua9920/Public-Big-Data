@@ -18,7 +18,7 @@
 
 | 제목                                                                                   | 내용                          | 유형          |
 | -------------------------------------------------------------------------------------- | ----------------------------- | ------------- |
-| 📂 [BigData](https://github.com/dua9920/Public-Big-Data/tree/main/BigData)             | 포충기 설치 입지 선정         | 데이터 전처리 |
+| 📂 [Caterpillar-Project](https://github.com/dua9920/Public-Big-Data/tree/main/Caterpillar-Project)             | 포충기 설치 입지 선정         | 데이터 전처리 |
 | 📂 [Jingu-Project](https://github.com/dua9920/Public-Big-Data/tree/main/Jingu-Project) | 민원 분석 & 불법주차지수 산정 | 데이터 분석   |
 | 📂 [Python](https://github.com/dua9920/Public-Big-Data/tree/main/Python)               | 기초문법, 크롤링 etc          | 파이썬 문법   |
 | 📂 [QGIS](https://github.com/dua9920/Public-Big-Data/tree/main/QGIS)                   | 공간지리분석 지도 시각화      | 지오코딩      |
