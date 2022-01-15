@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_67c730f8d0c3495997abd12d334d54e0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_67c730f8d0c3495997abd12d334d54e0" ></div>
+        
+</body>
+<script>    
+    
+            var map_67c730f8d0c3495997abd12d334d54e0 = L.map(
+                "map_67c730f8d0c3495997abd12d334d54e0",
+                {
+                    center: [35.160306712968755, 129.0476379609375],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_911c713276ed4336b7d75fedfd4b111d = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            var circle_marker_bdce29f4940a41e688a23516cd166bad = L.circleMarker(
+                [35.1605598, 129.0560362],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_bdce29f4940a41e688a23516cd166bad.bindTooltip(
+                `<div>
+                     부산광역시 부산진구 서면문화로
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_16c3c08d07eb40cda2c122a1b0cdb81b = L.circleMarker(
+                [35.1590126, 129.0658008],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_16c3c08d07eb40cda2c122a1b0cdb81b.bindTooltip(
+                `<div>
+                     부산광역시 부산진구 동성로
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4f5db02becad4c0c95bf08b2ea6172a5 = L.circleMarker(
+                [35.1646794, 129.0568825],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_4f5db02becad4c0c95bf08b2ea6172a5.bindTooltip(
+                `<div>
+                     부산광역시 부산진구 시민공원로
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_92714979b2544f25b363fedf7177be90 = L.circleMarker(
+                [35.1579655, 129.0579533],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_92714979b2544f25b363fedf7177be90.bindTooltip(
+                `<div>
+                     부산광역시 부산진구 부전로
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1297423fc70d459dae26f5e90d5741a8 = L.circleMarker(
+                [35.1647429, 129.0622177],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_1297423fc70d459dae26f5e90d5741a8.bindTooltip(
+                `<div>
+                     부산광역시 부산진구 범전로
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_88b60485b34142e5bb20e15f3eb089ba = L.circleMarker(
+                [35.1627484, 129.0617808],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_88b60485b34142e5bb20e15f3eb089ba.bindTooltip(
+                `<div>
+                     부산광역시 부산진구 중앙대로 783번길
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_95cce41a16c74f7ab56d2df882f87be4 = L.circleMarker(
+                [35.1561326, 129.0186517],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_95cce41a16c74f7ab56d2df882f87be4.bindTooltip(
+                `<div>
+                     부산광역시 부산진구 백양대로 300번길
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_469840863d0a42fc9a4a1eae04fe33e3 = L.circleMarker(
+                [35.1721255, 129.0677072],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_469840863d0a42fc9a4a1eae04fe33e3.bindTooltip(
+                `<div>
+                     부산광역시 부산진구 거제대로
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_87a960d2d5154a1aa85b467ca12203a3 = L.circleMarker(
+                [35.1742021, 129.0747654],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_87a960d2d5154a1aa85b467ca12203a3.bindTooltip(
+                `<div>
+                     부산광역시 부산진구 연수로
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7d14ede5756149459c8060ccbe2b7380 = L.circleMarker(
+                [35.1787628, 129.0731784],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_7d14ede5756149459c8060ccbe2b7380.bindTooltip(
+                `<div>
+                     부산광역시 부산진구 진연로
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a4166fe418c7494ca47d6743192aaf51 = L.circleMarker(
+                [35.1531931, 129.0576515],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_a4166fe418c7494ca47d6743192aaf51.bindTooltip(
+                `<div>
+                     부산광역시 부산진구 서면로
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_23a62fefdead40d9af02e0b1814ff12a = L.circleMarker(
+                [35.1829535, 129.0504627],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_23a62fefdead40d9af02e0b1814ff12a.bindTooltip(
+                `<div>
+                     부산광역시 부산진구 월드컵대로
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_68dccbbeb56145dd99c2943ae31548f1 = L.circleMarker(
+                [35.1486117, 129.0291586],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_68dccbbeb56145dd99c2943ae31548f1.bindTooltip(
+                `<div>
+                     부산광역시 부산진구 가야공원로
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bd36ef712e9b410fb0bc8accb5b33792 = L.circleMarker(
+                [35.1550124, 129.0524807],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_bd36ef712e9b410fb0bc8accb5b33792.bindTooltip(
+                `<div>
+                     부산광역시 부산진구 신천대로 126번길
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_cacb0517d7ce4073adca26d13943892c = L.circleMarker(
+                [35.1560728, 129.050297],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_cacb0517d7ce4073adca26d13943892c.bindTooltip(
+                `<div>
+                     부산광역시 부산진구 신천대로 165번길
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4e8e008e8c2a4986a63a4fb218f29268 = L.circleMarker(
+                [35.155889, 129.0626192],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_4e8e008e8c2a4986a63a4fb218f29268.bindTooltip(
+                `<div>
+                     부산광역시 부산진구 동천로
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_296ea0cce134446298778e6e2def764d = L.circleMarker(
+                [35.1704014, 129.0512854],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_296ea0cce134446298778e6e2def764d.bindTooltip(
+                `<div>
+                     부산광역시 부산진구 새싹로
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f481dffd03384679a2961d7780686783 = L.circleMarker(
+                [35.1653186, 129.0516634],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_f481dffd03384679a2961d7780686783.bindTooltip(
+                `<div>
+                     부산광역시 부산진구 시민공원로 19번길
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1e86f072507b40609181a54042bccb5b = L.circleMarker(
+                [35.1601597, 129.036515],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_1e86f072507b40609181a54042bccb5b.bindTooltip(
+                `<div>
+                     부산광역시 부산진구 백양대로
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_835c93f9c4644b818263453db0e0e62a = L.circleMarker(
+                [35.1416903, 129.0620084],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_835c93f9c4644b818263453db0e0e62a.bindTooltip(
+                `<div>
+                     부산광역시 부산진구 자유평화로
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_08bd20528e7343c5b53838f3aa502f8a = L.circleMarker(
+                [35.1468628, 129.0279363],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_08bd20528e7343c5b53838f3aa502f8a.bindTooltip(
+                `<div>
+                     부산광역시 부산진구 가야벽산아파트길
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_cf60b4f18c6f41388a5cbcc3cc0967bf = L.circleMarker(
+                [35.1507159, 129.024434],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_cf60b4f18c6f41388a5cbcc3cc0967bf.bindTooltip(
+                `<div>
+                     부산광역시 부산진구 냉정로
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5ce5b5c07dba4046b1ac0ed8daafa8d7 = L.circleMarker(
+                [35.1515633, 129.0364293],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_5ce5b5c07dba4046b1ac0ed8daafa8d7.bindTooltip(
+                `<div>
+                     부산광역시 부산진구 대학로 45번길
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2441843c17154f61be6ef0dec67bbe84 = L.circleMarker(
+                [35.1652868, 129.0284986],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_2441843c17154f61be6ef0dec67bbe84.bindTooltip(
+                `<div>
+                     부산광역시 부산진구 백양관문로
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_cfe5d722695d48149dd591cab15fbcf0 = L.circleMarker(
+                [35.1501324, 129.0325505],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_cfe5d722695d48149dd591cab15fbcf0.bindTooltip(
+                `<div>
+                     부산광역시 부산진구 가야대로 548번길
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_27921113403e4c7aa77f9d4260f89e1a = L.circleMarker(
+                [35.1502592, 129.0335035],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_27921113403e4c7aa77f9d4260f89e1a.bindTooltip(
+                `<div>
+                     부산광역시 부산진구 가야대로 552번길
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3d8d5b6b7d69480d84f8993087dd8d4c = L.circleMarker(
+                [35.1437325, 129.0593375],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_3d8d5b6b7d69480d84f8993087dd8d4c.bindTooltip(
+                `<div>
+                     부산광역시 부산진구 범일로
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7274ce3aff8746ac9c6d23492a64193b = L.circleMarker(
+                [35.1615535, 129.0255372],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_7274ce3aff8746ac9c6d23492a64193b.bindTooltip(
+                `<div>
+                     부산광역시 부산진구 백양대로 208번길+지선
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_50e573977bbe451c8cb3e8f3ca84f842 = L.circleMarker(
+                [35.1635604, 129.0263548],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_50e573977bbe451c8cb3e8f3ca84f842.bindTooltip(
+                `<div>
+                     부산광역시 부산진구 백양관문로 77번길
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_59ddc1134a6943cc8171a0804ebb7cf1 = L.circleMarker(
+                [35.1738204, 129.0307924],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_59ddc1134a6943cc8171a0804ebb7cf1.bindTooltip(
+                `<div>
+                     부산광역시 부산진구 백양산로 55번길+지선일부
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3e48bddfb25d4214ad770f9a021080ea = L.circleMarker(
+                [35.1738183, 129.0316594],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_3e48bddfb25d4214ad770f9a021080ea.bindTooltip(
+                `<div>
+                     부산광역시 부산진구 백양산로
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e228576346484d78bb5164baa46d5fd9 = L.circleMarker(
+                [35.1668429, 129.0382797],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_e228576346484d78bb5164baa46d5fd9.bindTooltip(
+                `<div>
+                     부산광역시 부산진구 당감로
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5c4db5db6802487bb405789aa9391f14 = L.circleMarker(
+                [35.1486807, 129.0627465],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_5c4db5db6802487bb405789aa9391f14.bindTooltip(
+                `<div>
+                     부산광역시 부산진구 황령대로
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3c2096f4ff034d8cad2df56ec6a696b1 = L.circleMarker(
+                [35.1578332, 129.0637334],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_3c2096f4ff034d8cad2df56ec6a696b1.bindTooltip(
+                `<div>
+                     부산광역시 부산진구 서전로
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7251de24e7a54a54900ea06c35c16c13 = L.circleMarker(
+                [35.1544914, 129.0635805],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_7251de24e7a54a54900ea06c35c16c13.bindTooltip(
+                `<div>
+                     부산광역시 부산진구 전포대로 199번길
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_40a29cc21f9244af84d7111bb98d9a09 = L.circleMarker(
+                [35.1662542, 129.0352231],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_40a29cc21f9244af84d7111bb98d9a09.bindTooltip(
+                `<div>
+                     부산광역시 부산진구 당감서로
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2209f9215587418790a349666d3aab8c = L.circleMarker(
+                [35.1681223, 129.0375094],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_2209f9215587418790a349666d3aab8c.bindTooltip(
+                `<div>
+                     부산광역시 부산진구 백양순환로
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5750173f2a884ad881817d814be8b101 = L.circleMarker(
+                [35.1667992, 129.0319106],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_5750173f2a884ad881817d814be8b101.bindTooltip(
+                `<div>
+                     부산광역시 부산진구 백양순환로 35번길
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e67a832214a4436b9039956c17dd637e = L.circleMarker(
+                [35.1631554, 129.0336767],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_e67a832214a4436b9039956c17dd637e.bindTooltip(
+                `<div>
+                     부산광역시 부산진구 백양대로 136번길
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6dbae9afd7244a048fcecfe307bc0c4e = L.circleMarker(
+                [35.1555541, 129.0659438],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_6dbae9afd7244a048fcecfe307bc0c4e.bindTooltip(
+                `<div>
+                     부산광역시 부산진구 전포대로
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0e9f8ae1c1964296ae4f513aae97edbc = L.circleMarker(
+                [35.1498082, 129.051802],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_0e9f8ae1c1964296ae4f513aae97edbc.bindTooltip(
+                `<div>
+                     부산광역시 부산진구 신암로
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c720126ecb2645269a95826899bec66e = L.circleMarker(
+                [35.1584115, 129.0521134],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_c720126ecb2645269a95826899bec66e.bindTooltip(
+                `<div>
+                     부산광역시 부산진구 신천대로
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4c4bba9b7a4949299c772d599a94c087 = L.circleMarker(
+                [35.1781132, 129.0521508],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_4c4bba9b7a4949299c772d599a94c087.bindTooltip(
+                `<div>
+                     부산광역시 부산진구 성지로
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2f997b4313d64a2faad7048d7a942aa4 = L.circleMarker(
+                [35.1475761, 129.0198636],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_2f997b4313d64a2faad7048d7a942aa4.bindTooltip(
+                `<div>
+                     부산광역시 부산진구 복지로
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_20ca0e3b71e54899aac08c716d78b702 = L.circleMarker(
+                [35.1544133, 129.0210367],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_20ca0e3b71e54899aac08c716d78b702.bindTooltip(
+                `<div>
+                     부산광역시 부산진구 가야대로 443번길
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a14e9c8625a34314a7b7bd39f3ad024d = L.circleMarker(
+                [35.1510299, 129.0442084],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_a14e9c8625a34314a7b7bd39f3ad024d.bindTooltip(
+                `<div>
+                     부산광역시 부산진구 엄광로
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f01eb3dafac84cf1a7870dc9010fbe30 = L.circleMarker(
+                [35.1689518, 129.0490195],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_f01eb3dafac84cf1a7870dc9010fbe30.bindTooltip(
+                `<div>
+                     부산광역시 부산진구 동평로
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_697ba0ba29064e66affaafcbc62af0d0 = L.circleMarker(
+                [35.1587335, 129.063596],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_697ba0ba29064e66affaafcbc62af0d0.bindTooltip(
+                `<div>
+                     부산광역시 부산진구 중앙대로
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_887c5459f1104702b8ef7ff03e6ef979 = L.circleMarker(
+                [35.1545019, 129.0334678],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_887c5459f1104702b8ef7ff03e6ef979.bindTooltip(
+                `<div>
+                     부산광역시 부산진구 가야대로
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1d56eced2a00484bb01f084bb214daa4 = L.circleMarker(
+                [35.1859841, 129.048271],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_1d56eced2a00484bb01f084bb214daa4.bindTooltip(
+                `<div>
+                     부산광역시 부산진구 성지곡로
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f34864453e9d4fac8032a9ebff14b4cd = L.circleMarker(
+                [35.16555, 129.0731479],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_f34864453e9d4fac8032a9ebff14b4cd.bindTooltip(
+                `<div>
+                     부산광역시 부산진구 진남로
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9bdb005509514bb894e60aa88a207abd = L.circleMarker(
+                [35.1697096, 129.0489306],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_9bdb005509514bb894e60aa88a207abd.bindTooltip(
+                `<div>
+                     부산광역시 부산진구 동평로 183번길
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c6bf44cc71e243d183210164335e75ed = L.circleMarker(
+                [35.1787318, 129.046807],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_c6bf44cc71e243d183210164335e75ed.bindTooltip(
+                `<div>
+                     부산광역시 부산진구 초읍천로
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_82b287317e344754a3b61ebd4e8c0a9d = L.circleMarker(
+                [35.1736047, 129.0467586],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_82b287317e344754a3b61ebd4e8c0a9d.bindTooltip(
+                `<div>
+                     부산광역시 부산진구 초연로
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_91c17ac3e27344dfb0a2702fc91b2e7a = L.circleMarker(
+                [35.1492282, 129.0617453],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_91c17ac3e27344dfb0a2702fc91b2e7a.bindTooltip(
+                `<div>
+                     부산광역시 부산진구 중앙대로 644번길
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_46e6be8d3dc34262aafb9fa742d002a4 = L.circleMarker(
+                [35.1460039, 129.0625997],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_46e6be8d3dc34262aafb9fa742d002a4.bindTooltip(
+                `<div>
+                     부산광역시 부산진구 황령대로 30번길
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f5395ddf4da848bd825986616cc185af = L.circleMarker(
+                [35.14272443, 129.0626879],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_f5395ddf4da848bd825986616cc185af.bindTooltip(
+                `<div>
+                     부산광역시 부산진구 자유평화로 37번길
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_033802856b0f4aadb866981e6bd10b24 = L.circleMarker(
+                [35.1630545, 129.0523593],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_033802856b0f4aadb866981e6bd10b24.bindTooltip(
+                `<div>
+                     부산광역시 부산진구 시민공원로 20번길
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_efca6460e48a40c3b70b224b3a0224be = L.circleMarker(
+                [35.1492168, 129.0559186],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_efca6460e48a40c3b70b224b3a0224be.bindTooltip(
+                `<div>
+                     부산광역시 부산진구 범천로
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6fb7bec7bdba46ec92993199a92d6d42 = L.circleMarker(
+                [35.1544606, 129.0251597],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_6fb7bec7bdba46ec92993199a92d6d42.bindTooltip(
+                `<div>
+                     부산광역시 부산진구 개금온정로
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_01a69a35cdfb48cdba23cc744a937b62 = L.circleMarker(
+                [35.1674447, 129.0269767],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_01a69a35cdfb48cdba23cc744a937b62.bindTooltip(
+                `<div>
+                     부산광역시 부산진구 백양관문로 지선
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2ce82f91c74c41258ba07dddbb065e76 = L.circleMarker(
+                [35.1760575, 129.0644758],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_2ce82f91c74c41258ba07dddbb065e76.bindTooltip(
+                `<div>
+                     부산광역시 부산진구 화지로
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9683ea6ba8f44a938205c0930508f212 = L.circleMarker(
+                [35.1460165, 129.0527717],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_9683ea6ba8f44a938205c0930508f212.bindTooltip(
+                `<div>
+                     부산광역시 부산진구 만리산로
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e9cf7ccabc60436cb8ebbe323104a270 = L.circleMarker(
+                [35.1510299, 129.0442084],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_67c730f8d0c3495997abd12d334d54e0);
+        
+    
+            circle_marker_e9cf7ccabc60436cb8ebbe323104a270.bindTooltip(
+                `<div>
+                     부산광역시
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

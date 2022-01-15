@@ -1,0 +1,2 @@
+Hello World Python!!
+a 모드를 이용해서 파일 쓰기
